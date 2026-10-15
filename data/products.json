@@ -1,0 +1,180 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Fender Player Stratocaster",
+      "category": "Gitar & Bass",
+      "brand": "Fender",
+      "price": 12850000,
+      "rating": 4.9,
+      "stock": 8,
+      "description": "Gitar elektrik ikonik dengan 3 pickup single-coil Player Series, bodi alder, dan neck maple modern C yang nyaman dimainkan.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><path d='M70,140 Q110,60 170,120 T260,80' stroke='%23f59e0b' stroke-width='14' fill='none' stroke-linecap='round'/><circle cx='95' cy='125' r='18' fill='%23d97706'/><line x1='60' y1='150' x2='265' y2='75' stroke='%23f8fafc' stroke-width='2'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Gitar Elektrik Stratocaster</text></svg>"
+    },
+    {
+      "id": 2,
+      "title": "Yamaha Pacifica 112V",
+      "category": "Gitar & Bass",
+      "brand": "Yamaha",
+      "price": 3450000,
+      "rating": 4.8,
+      "stock": 14,
+      "description": "Pilihan serbaguna gitar elektrik konfigurasi H-S-S Alnico V pickups dengan coil-tap switch untuk jangkauan genre luas.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><path d='M80,150 C120,70 160,140 245,85' stroke='%2338bdf8' stroke-width='12' fill='none' stroke-linecap='round'/><circle cx='105' cy='135' r='16' fill='%230284c7'/><line x1='70' y1='160' x2='255' y2='80' stroke='%23f8fafc' stroke-width='2'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Yamaha Pacifica 112V</text></svg>"
+    },
+    {
+      "id": 3,
+      "title": "Taylor GS Mini Mahoni Akustik",
+      "category": "Gitar & Bass",
+      "brand": "Taylor",
+      "price": 10500000,
+      "rating": 4.9,
+      "stock": 5,
+      "description": "Gitar akustik compact dengan bodi tropical mahogany yang menghasilkan resonansi hangat, cocok untuk panggung dan bepergian.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><ellipse cx='130' cy='120' rx='42' ry='50' fill='%23b45309'/><circle cx='130' cy='115' r='14' fill='%23111622'/><rect x='165' y='108' width='90' height='14' fill='%2378350f' rx='3'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Gitar Akustik Taylor</text></svg>"
+    },
+    {
+      "id": 4,
+      "title": "Ibanez SR300E 4-String Bass",
+      "category": "Gitar & Bass",
+      "brand": "Ibanez",
+      "price": 5200000,
+      "rating": 4.7,
+      "stock": 7,
+      "description": "Bass elektrik 4 senar dengan neck ramping, pickup dual-coil PowerSpan, dan equalizer aktif 3-band yang responsif.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><path d='M75,135 Q120,60 175,110 T255,85' stroke='%23ec4899' stroke-width='12' fill='none' stroke-linecap='round'/><circle cx='95' cy='122' r='15' fill='%23be185d'/><line x1='65' y1='142' x2='265' y2='80' stroke='%23f8fafc' stroke-width='3'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Ibanez Bass Elektrik</text></svg>"
+    },
+    {
+      "id": 5,
+      "title": "Roland FP-30X Digital Piano",
+      "category": "Keyboard & Piano",
+      "brand": "Roland",
+      "price": 11200000,
+      "rating": 4.9,
+      "stock": 6,
+      "description": "Piano digital panggung 88-tuts berbobot PHA-4 Standard dengan SuperNATURAL Piano sound engine dan audio Bluetooth.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><rect x='60' y='90' width='200' height='45' fill='%230f172a' stroke='%23475569' stroke-width='2' rx='4'/><rect x='70' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='85' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='100' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='115' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='130' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='145' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='160' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='175' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='190' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='205' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='220' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='235' y='93' width='12' height='38' fill='%23f8fafc'/><rect x='78' y='93' width='8' height='24' fill='%23090d16'/><rect x='93' y='93' width='8' height='24' fill='%23090d16'/><rect x='123' y='93' width='8' height='24' fill='%23090d16'/><rect x='138' y='93' width='8' height='24' fill='%23090d16'/><rect x='153' y='93' width='8' height='24' fill='%23090d16'/><rect x='183' y='93' width='8' height='24' fill='%23090d16'/><rect x='198' y='93' width='8' height='24' fill='%23090d16'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Roland FP-30X 88-Keys</text></svg>"
+    },
+    {
+      "id": 6,
+      "title": "Yamaha PSR-E473 Portable Keyboard",
+      "category": "Keyboard & Piano",
+      "brand": "Yamaha",
+      "price": 4900000,
+      "rating": 4.7,
+      "stock": 11,
+      "description": "Keyboard arranger 61-tuts dengan 820 voice alat musik dunia, tombol Mega Boost, dan fitur Quick Sampling kreatif.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><rect x='65' y='85' width='190' height='55' fill='%231e293b' stroke='%2364748b' stroke-width='2' rx='4'/><rect x='125' y='92' width='70' height='16' fill='%230284c7' rx='2'/><rect x='75' y='114' width='170' height='22' fill='%23f1f5f9' rx='2'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Yamaha PSR Arranger</text></svg>"
+    },
+    {
+      "id": 7,
+      "title": "Korg Minilogue XD Polyphonic Synthesizer",
+      "category": "Keyboard & Piano",
+      "brand": "Korg",
+      "price": 8900000,
+      "rating": 4.9,
+      "stock": 4,
+      "description": "Synthesizer analog polifonik 4 suara generasi baru dengan multi-engine digital, efek digital stereo, dan sekuens 16-langkah.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><rect x='70' y='80' width='180' height='65' fill='%230f172a' stroke='%23f59e0b' stroke-width='2' rx='5'/><circle cx='95' cy='98' r='7' fill='%23f59e0b'/><circle cx='120' cy='98' r='7' fill='%23f59e0b'/><circle cx='145' cy='98' r='7' fill='%23f59e0b'/><rect x='170' y='92' width='30' height='14' fill='%2310b981'/><rect x='80' y='122' width='160' height='18' fill='%23f8fafc'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Korg Minilogue Synthesizer</text></svg>"
+    },
+    {
+      "id": 8,
+      "title": "Roland V-Drums TD-07KV Electronic Drum",
+      "category": "Drum & Perkusi",
+      "brand": "Roland",
+      "price": 15800000,
+      "rating": 4.9,
+      "stock": 3,
+      "description": "Drum kit elektrik dengan pad mesh-head ganda legendaris Roland, berekspresi hening namun berkarakter dinamika drum akustik.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><circle cx='160' cy='125' r='24' fill='%23334155' stroke='%23f8fafc' stroke-width='3'/><circle cx='110' cy='90' r='18' fill='%231e293b' stroke='%2338bdf8' stroke-width='2'/><circle cx='210' cy='90' r='18' fill='%231e293b' stroke='%2338bdf8' stroke-width='2'/><ellipse cx='80' cy='65' rx='22' ry='7' fill='%23eab308'/><ellipse cx='240' cy='65' rx='22' ry='7' fill='%23eab308'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Roland V-Drums TD-07</text></svg>"
+    },
+    {
+      "id": 9,
+      "title": "Pearl Export EXX 5-Piece Drum Kit",
+      "category": "Drum & Perkusi",
+      "brand": "Pearl",
+      "price": 14200000,
+      "rating": 4.8,
+      "stock": 3,
+      "description": "Set drum akustik legendaris dunia berteknologi shell Superior Sound Technology (S.S.T.) poplar/asian mahogany untuk resonansi panggung.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><ellipse cx='160' cy='125' rx='34' ry='30' fill='%23991b1b' stroke='%23e2e8f0' stroke-width='4'/><ellipse cx='115' cy='75' rx='18' ry='15' fill='%237f1d1d' stroke='%23cbd5e1' stroke-width='2'/><ellipse cx='205' cy='75' rx='18' ry='15' fill='%237f1d1d' stroke='%23cbd5e1' stroke-width='2'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Pearl Export Akustik</text></svg>"
+    },
+    {
+      "id": 10,
+      "title": "Meinl Percussion Snare Cajon",
+      "category": "Drum & Perkusi",
+      "brand": "Meinl",
+      "price": 1450000,
+      "rating": 4.7,
+      "stock": 16,
+      "description": "Cajon bodi kayu birch baltik dengan internal snare wire ganda menghasilkan nada bass mendalam dan tepukan slap renyah.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><polygon points='120,65 200,65 190,155 130,155' fill='%23b45309' stroke='%2378350f' stroke-width='3'/><polygon points='120,65 130,155 105,145 95,65' fill='%2392400e'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Meinl Snare Cajon</text></svg>"
+    },
+    {
+      "id": 11,
+      "title": "Shure SM7B Cardioid Studio Mic",
+      "category": "Audio & Studio",
+      "brand": "Shure",
+      "price": 6400000,
+      "rating": 5.0,
+      "stock": 7,
+      "description": "Mikrofon dinamik vokal standar industri rekaman dan broadcast dengan pelindung elektromagnetik dan isolasi guncangan internal.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><rect x='110' y='95' width='80' height='35' rx='10' fill='%231e293b' stroke='%2364748b' stroke-width='2'/><rect x='175' y='98' width='25' height='29' fill='%230f172a' rx='4'/><path d='M100,112 L85,112 L85,145 L155,145' stroke='%2394a3b8' stroke-width='4' fill='none'/><circle cx='155' cy='145' r='6' fill='%23f59e0b'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Shure SM7B Studio</text></svg>"
+    },
+    {
+      "id": 12,
+      "title": "Focusrite Scarlett 2i2 4th Gen",
+      "category": "Audio & Studio",
+      "brand": "Focusrite",
+      "price": 3150000,
+      "rating": 4.9,
+      "stock": 12,
+      "description": "Audio interface USB dengan konverter 192kHz/24-bit studio grade, mode Air Mode emulasi transformer analog ISA console.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><rect x='80' y='80' width='160' height='60' rx='5' fill='%23b91c1c' stroke='%23dc2626' stroke-width='2'/><circle cx='115' cy='110' r='12' fill='%231e293b' stroke='%23f8fafc' stroke-width='2'/><circle cx='155' cy='110' r='12' fill='%231e293b' stroke='%23f8fafc' stroke-width='2'/><circle cx='205' cy='110' r='16' fill='%23334155' stroke='%23f8fafc' stroke-width='2'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Focusrite Scarlett 2i2</text></svg>"
+    },
+    {
+      "id": 13,
+      "title": "Yamaha HS5 Powered Studio Monitor",
+      "category": "Audio & Studio",
+      "brand": "Yamaha",
+      "price": 4200000,
+      "rating": 4.8,
+      "stock": 9,
+      "description": "Speaker monitor studio nearfield bi-amp 70W dengan white cone woofer 5 inci untuk akurasi mixing dan mastering tanpa bias.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><rect x='105' y='65' width='110' height='105' rx='8' fill='%230f172a' stroke='%23334155' stroke-width='3'/><circle cx='160' cy='90' r='10' fill='%231e293b'/><circle cx='160' cy='132' r='26' fill='%23f8fafc' stroke='%2364748b' stroke-width='3'/><circle cx='160' cy='132' r='9' fill='%230f172a'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Yamaha HS5 Studio Monitor</text></svg>"
+    },
+    {
+      "id": 14,
+      "title": "Audio-Technica ATH-M50x Monitor Headphone",
+      "category": "Aksesoris Musik",
+      "brand": "Audio-Technica",
+      "price": 2250000,
+      "rating": 4.9,
+      "stock": 18,
+      "description": "Headphone monitoring profesional driver aperture 45mm dengan isolasi suara optimal di lingkungan mixing ramai.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><path d='M100,120 A60,60 0 0,1 220,120' stroke='%23475569' stroke-width='10' fill='none'/><rect x='85' y='110' width='24' height='40' rx='10' fill='%230f172a' stroke='%2394a3b8' stroke-width='2'/><rect x='211' y='110' width='24' height='40' rx='10' fill='%230f172a' stroke='%2394a3b8' stroke-width='2'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>ATH-M50x Headphones</text></svg>"
+    },
+    {
+      "id": 15,
+      "title": "Boss DS-1 Distortion Pedal",
+      "category": "Aksesoris Musik",
+      "brand": "Boss",
+      "price": 875000,
+      "rating": 4.8,
+      "stock": 25,
+      "description": "Pedal distorsi legendaris warna oranye klasik penentu tone rock sejak 1978, mempertahankan karakter khas gitar.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><rect x='115' y='75' width='90' height='90' rx='6' fill='%23ea580c' stroke='%239a3412' stroke-width='2'/><rect x='125' y='125' width='70' height='32' rx='3' fill='%230f172a'/><circle cx='135' cy='92' r='6' fill='%231e293b'/><circle cx='160' cy='92' r='6' fill='%231e293b'/><circle cx='185' cy='92' r='6' fill='%231e293b'/><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Boss DS-1 Distortion</text></svg>"
+    },
+    {
+      "id": 16,
+      "title": "D'Addario EXL110 Nickel Wound Strings",
+      "category": "Aksesoris Musik",
+      "brand": "D'Addario",
+      "price": 115000,
+      "rating": 4.9,
+      "stock": 50,
+      "description": "Set senar gitar elektrik ukuran 10-46 Regular Light dengan intonasi presisi dan daya tahan korosi tinggi.",
+      "thumbnail": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220' width='320' height='220'><rect width='100%25' height='100%25' fill='%231a2332'/><circle cx='160' cy='110' r='75' fill='%23223046'/><circle cx='160' cy='110' r='45' stroke='%230284c7' stroke-width='6' fill='none'/><circle cx='160' cy='110' r='30' stroke='%23f59e0b' stroke-width='4' fill='none'/><text x='160' y='115' fill='%23f8fafc' font-family='sans-serif' font-size='14' font-weight='bold' text-anchor='middle'>XL</text><text x='160' y='195' fill='%2394a3b8' font-family='sans-serif' font-size='13' text-anchor='middle'>Senar D'Addario EXL110</text></svg>"
+    }
+  ]
+}
