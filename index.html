@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NAMA-APLIKASI-MU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>NAMA-APLIKASI-MU</h1>
+    <p>Nama Lengkap - NIM - Kelas</p>
+  </header>
+
+  <main>
+    <section id="controls" aria-labelledby="controls-title">
+      <h2 id="controls-title">Filter dan statistik</h2>
+      <div class="controls">
+        <div class="field">
+          <label for="category-filter">Kategori</label>
+          <select id="category-filter">
+            <option value="all">Semua kategori</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="max-price">Harga maksimum ($)</label>
+          <input type="number" id="max-price" min="0" inputmode="decimal">
+        </div>
+      </div>
+      <dl id="stats" class="stats"></dl>
+    </section>
+
+    <section id="data-section" aria-labelledby="data-title">
+      <h2 id="data-title">Daftar data</h2>
+      <div class="view-toggle" role="group" aria-label="Tampilan data">
+        <button type="button" id="btn-grid" aria-pressed="true">Grid</button>
+        <button type="button" id="btn-list" aria-pressed="false">List</button>
+      </div>
+      <p id="status" role="status" aria-live="polite"></p>
+      <div id="data-list" class="grid"></div>
+    </section>
+
+    <section id="form-section" aria-labelledby="form-title">
+      <h2 id="form-title">Form</h2>
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+          <p id="email-error" class="field-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="email-confirm">Konfirmasi email</label>
+          <input type="email" id="email-confirm" name="email-confirm" autocomplete="off" aria-describedby="email-confirm-error">
+          <p id="email-confirm-error" class="field-error" role="alert"></p>
+        </div>
+        <button type="submit">Kirim</button>
+        <p id="form-success" class="form-success" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Nama Lengkap - NIM - Kelas</p>
+  </footer>
+
+  <script src="utils.js"></script>
+  <script src="apps.js"></script>
+</body>
+</html>
