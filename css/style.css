@@ -1,19 +1,14 @@
-/* ==========================================================================
-   CSS Music For Living (Sederhana, Bersih & Mudah Dijelaskan untuk Ujian PTS)
-   Palet: Rosewood (#721820), Sand (#E5D3AF), Ivory (#FAF7F2), Charcoal (#1F1A1B)
-   ========================================================================== */
-
 /* 1. Variabel Desain Utama */
 :root {
-  --primary: #721820;       /* Warna primer toko (Rosewood) */
-  --primary-hover: #8F222B; /* Warna saat tombol disorot */
-  --sand: #E5D3AF;          /* Aksen sekunder */
-  --bg: #FAF7F2;            /* Latar belakang halaman (Warm Ivory) */
-  --surface: #FFFFFF;       /* Latar kartu putih */
-  --text: #1F1A1B;          /* Teks utama (Kontras tinggi WCAG AAA) */
-  --text-muted: #54626D;    /* Teks sekunder/keterangan */
-  --border: #E5DCD0;        /* Garis batas elemen */
-  --radius: 8px;            /* Kelengkungan sudut standar */
+  --primary: #721820;
+  --primary-hover: #8F222B;
+  --sand: #E5D3AF;
+  --bg: #FAF7F2;
+  --surface: #FFFFFF;
+  --text: #1F1A1B;
+  --text-muted: #54626D;
+  --border: #E5DCD0;
+  --radius: 8px;
 }
 
 /* 2. Reset & Tipografi Dasar */
@@ -95,7 +90,8 @@ img {
   font-weight: 600;
 }
 
-.nav-link.active, .nav-link:hover {
+.nav-link.active,
+.nav-link:hover {
   background: var(--primary);
   color: #FFF;
   text-decoration: none;
@@ -211,7 +207,7 @@ img {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .hero-card-media {
@@ -290,7 +286,9 @@ img {
   margin-bottom: 0.35rem;
 }
 
-.form-input, .form-select, .form-textarea {
+.form-input,
+.form-select,
+.form-textarea {
   width: 100%;
   padding: 0.6rem 0.75rem;
   border: 1px solid var(--border);
@@ -299,7 +297,9 @@ img {
   min-height: 44px;
 }
 
-.form-input:focus, .form-select:focus, .form-textarea:focus {
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
   border-color: var(--primary);
   outline: 2px solid rgba(114, 24, 32, 0.15);
 }
@@ -354,10 +354,25 @@ img {
   font-size: 0.9rem;
 }
 
-.status-loading { background: #EEF5FB; color: #12558A; }
-.status-success { background: #EBF8F1; color: #0E6239; }
-.status-empty   { background: #FFFBEB; color: #92400E; }
-.status-error   { background: #FDF2F2; color: #A81C1C; }
+.status-loading {
+  background: #EEF5FB;
+  color: #12558A;
+}
+
+.status-success {
+  background: #EBF8F1;
+  color: #0E6239;
+}
+
+.status-empty {
+  background: #FFFBEB;
+  color: #92400E;
+}
+
+.status-error {
+  background: #FDF2F2;
+  color: #A81C1C;
+}
 
 /* Grid Tampilan Standar */
 .products-grid {
@@ -486,7 +501,8 @@ img {
   gap: 1.5rem;
 }
 
-.contact-card, .showroom-card {
+.contact-card,
+.showroom-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -522,7 +538,7 @@ img {
   min-height: 1rem;
 }
 
-.form-input[aria-invalid="true"], 
+.form-input[aria-invalid="true"],
 .form-textarea[aria-invalid="true"] {
   border-color: #A81C1C;
   background: #FFF9F9;
@@ -580,7 +596,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.5rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 1.5rem;
 }
 
@@ -590,7 +606,8 @@ img {
   font-weight: 700;
 }
 
-.footer-desc, .footer-student p {
+.footer-desc,
+.footer-student p {
   font-size: 0.85rem;
   color: #AEC4D4;
 }
@@ -603,12 +620,16 @@ img {
 }
 
 @media (max-width: 768px) {
-  .hero-grid, .contact-layout {
+
+  .hero-grid,
+  .contact-layout {
     grid-template-columns: 1fr;
   }
+
   .products-grid.list-view .product-card {
     flex-direction: column;
   }
+
   .products-grid.list-view .card-media {
     width: 100%;
     height: 180px;

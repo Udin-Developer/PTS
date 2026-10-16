@@ -1,4 +1,4 @@
-const API_URL = "data/products.json";
+const API_URL = "https://dummyjson.com/products";
 const VIEW_KEY = "melodia_view_mode";
 
 // State global data
