@@ -1,69 +1,322 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NAMA-APLIKASI-MU</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Music For Living - Dashboard dan Katalog Toko Musik Terpadu. Penyedia alat-alat yang mendukung musikalitas Anda dengan fitur filter interaktif, statistik sederhana, toggle grid/list, dan form konsultasi terverifikasi.">
+  <title>Music For Living - Dashboard &amp; Katalog Toko Musik</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <!-- Header & Navigasi Terpadu -->
   <header class="site-header">
-    <h1>NAMA-APLIKASI-MU</h1>
-    <p>Nama Lengkap - NIM - Kelas</p>
+    <div class="header-inner">
+      <div class="brand-group">
+        <a href="#dashboard" class="brand-logo" aria-label="Beranda Music For Living">
+          <img src="assets/logo.jpg" alt="Logo Music For Living" class="brand-logo-img" width="36" height="36">
+          <span class="brand-text">Music For Living</span>
+        </a>
+        <p class="student-meta">Teknik Komputer UBT | NIM: 2440304016 (X=0, Y=1, Z=6, C=3)</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Navigasi Utama">
+        <ul class="nav-list">
+          <li><a href="#dashboard" class="nav-link active" aria-current="page">Dashboard &amp; Katalog</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak &amp; Konsultasi</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="controls" aria-labelledby="controls-title">
-      <h2 id="controls-title">Filter dan statistik</h2>
-      <div class="controls">
-        <div class="field">
-          <label for="category-filter">Kategori</label>
-          <select id="category-filter">
-            <option value="all">Semua kategori</option>
-          </select>
+  <main id="main-content">
+    <!-- ==========================================
+         BAGIAN 1: DASHBOARD & KATALOG TERPADU
+         (Digit X=0, Fitur Digit Y=1, Challenge C=3)
+         ========================================== -->
+    <section id="dashboard" class="section hero-section" aria-labelledby="hero-title">
+      <!-- Banner Hero & Sorotan Instrumen -->
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-tagline-badge">"Beethoven pernah beli di sini"</span>
+          <h1 id="hero-title" class="hero-title">Penyedia Alat-Alat untuk mendukung Musikalitas Anda</h1>
+          <p class="hero-lead">
+            Selamat datang di <strong>Music For Living</strong>. Showroom instrumen musik dan peralatan audio
+            studio rekaman bergaransi resmi. Seluruh inventaris instrumen, filter data, kalkulasi statistik dinamis, dan
+            pilihan tampilan.
+          </p>
+          <div class="hero-actions">
+            <a href="#katalog-section" class="btn btn-primary">Telusuri Katalog &amp; Filter Data &darr;</a>
+            <a href="#kontak" class="btn btn-secondary">Konsultasi Pesanan</a>
+          </div>
         </div>
-        <div class="field">
-          <label for="max-price">Harga maksimum ($)</label>
-          <input type="number" id="max-price" min="0" inputmode="decimal">
+
+        <div class="hero-card" role="region" aria-label="Sorotan Instrumen Pilihan">
+          <div class="hero-card-media">
+            <img src="assets/images/fender-stratocaster.jpg"
+              alt="Fender Player Stratocaster - Instrumen Orisinal Pilihan" class="hero-card-img" width="320"
+              height="200" loading="eager">
+          </div>
+          <div class="hero-card-body">
+            <div class="hero-card-header">
+              <div>
+                <span class="card-brand">Gitar Elektrik Pilihan Para Musisi</span>
+                <h2 class="hero-card-title">Fender Player Stratocaster</h2>
+              </div>
+              <span class="hero-card-price">Rp 12.850.000</span>
+            </div>
+
+            <p class="card-desc" style="font-size: 0.88rem; margin: 0.5rem 0 0.85rem; line-height: 1.5;">Gitar elektrik
+              legendaris dengan 3 pickup single-coil, bodi alder, dan neck maple modern C.
+            </p>
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-border); padding-top: 0.75rem; font-size: 0.85rem; color: var(--color-text-muted);">
+              <span class="card-rating">Rating: 4.9 Pilihan Musisi</span>
+              <span>Stok: 8 unit</span>
+            </div>
+          </div>
         </div>
       </div>
-      <dl id="stats" class="stats"></dl>
-    </section>
 
-    <section id="data-section" aria-labelledby="data-title">
-      <h2 id="data-title">Daftar data</h2>
-      <div class="view-toggle" role="group" aria-label="Tampilan data">
-        <button type="button" id="btn-grid" aria-pressed="true">Grid</button>
-        <button type="button" id="btn-list" aria-pressed="false">List</button>
+      <!-- Ringkasan Statistik Metrik Toko (Digit X=0 Dataset Products) -->
+      <div class="section-header" style="margin-top: 1.5rem;">
+        <span class="section-eyebrow">DATA REAL-TIME TOKO</span>
+        <h2 class="section-title">Ringkasan Statistik Inventaris</h2>
+        <p class="section-desc">Ringkasan data inventaris.</p>
       </div>
-      <p id="status" role="status" aria-live="polite"></p>
-      <div id="data-list" class="grid"></div>
+      <dl id="dashboard-stats" class="stats-grid" aria-label="Metrik Ringkasan Toko"></dl>
+
+      <!-- Area Katalog Produk & Filter Data Masuk Langsung di Dashboard -->
+      <div id="katalog-section"
+        style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+        <div class="section-header">
+          <span class="section-eyebrow">KATALOG &amp; FILTER DATA (FITUR Y &amp; CHALLENGE C)</span>
+          <h2 class="section-title">Daftar Barang &amp; Katalog Instrumen Musik</h2>
+          <p class="section-desc">
+            Filter instrumen berdasarkan kategori pilihan dan batas harga maksimum. Ringkasan statistik sederhana di
+            bawah panel filter otomatis diperbarui secara dinamis saat filter diubah.
+          </p>
+        </div>
+
+        <!-- Panel Filter Data (Fitur Digit Y=1) -->
+        <div class="filter-panel" role="search" aria-label="Filter dan Pengurutan Data">
+          <div class="filter-grid">
+            <div class="field-group">
+              <label for="category-filter">Pilih Kategori Instrumen</label>
+              <select id="category-filter" class="form-select">
+                <option value="all">Semua Kategori</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="max-price">Batas Harga Maksimum (Rp)</label>
+              <input type="number" id="max-price" class="form-input" min="0" step="50000" placeholder="Contoh: 10000000"
+                inputmode="numeric">
+            </div>
+
+            <div class="field-group">
+              <label for="sort-by">Urutkan Berdasarkan</label>
+              <select id="sort-by" class="form-select">
+                <option value="default">Urutan Standar</option>
+                <option value="price-asc">Harga: Termurah &rarr; Termahal</option>
+                <option value="price-desc">Harga: Termahal &rarr; Termurah</option>
+                <option value="rating-desc">Rating Tertinggi</option>
+                <option value="name-asc">Nama Produk (A - Z)</option>
+              </select>
+            </div>
+
+            <div class="field-group" style="justify-content: flex-end;">
+              <button type="button" id="btn-reset-filter" class="btn btn-secondary">Reset Filter</button>
+            </div>
+          </div>
+
+          <!-- Statistik Sederhana Data Terfilter (Fitur Digit Y=1) -->
+          <div class="stats-subpanel">
+            <h3 class="stats-subpanel-title">Statistik Sederhana Data Terfilter:</h3>
+            <dl id="stats" class="stats-grid" aria-label="Statistik Data Terfilter"></dl>
+          </div>
+        </div>
+
+        <!-- Toolbar Katalog & Challenge C: Toggle Grid/List -->
+        <div class="catalog-toolbar">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-text);">Koleksi Instrumen Terpilih</h3>
+            <p class="catalog-info">Preferensi tampilan Grid atau List tersimpan otomatis di penyimpanan lokal browser
+              Anda.</p>
+          </div>
+
+          <div class="view-toggle-group" style="display: flex; align-items: center; gap: 0.6rem;">
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--color-text-muted);"
+              id="view-toggle-label">Tampilan:</span>
+            <div class="view-toggle" role="group" aria-labelledby="view-toggle-label">
+              <button type="button" id="btn-grid" class="toggle-btn" aria-pressed="true">
+                <span aria-hidden="true">▦</span>
+                <span>Grid</span>
+              </button>
+              <button type="button" id="btn-list" class="toggle-btn" aria-pressed="false">
+                <span aria-hidden="true">☵</span>
+                <span>List</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Status Data & Notifikasi Filter -->
+        <p id="status" class="status-notice status-success" role="status" aria-live="polite">Memuat data instrumen
+          musik...</p>
+
+        <!-- Wadah Kartu Produk Dinamis -->
+        <div id="data-list" class="products-grid" aria-live="polite"></div>
+      </div>
     </section>
 
-    <section id="form-section" aria-labelledby="form-title">
-      <h2 id="form-title">Form</h2>
-      <form id="contact-form" novalidate>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
-          <p id="email-error" class="field-error" role="alert"></p>
+    <!-- ==========================================
+         BAGIAN 2: KONTAK & VALIDASI FORM (DIGIT Z=6)
+         ========================================== -->
+    <section id="kontak" class="section contact-section" aria-labelledby="contact-title">
+      <div class="section-header">
+        <span class="section-eyebrow">LAYANAN MUSISI &amp; VERIFIKASI (DIGIT Z=6)</span>
+        <h2 id="contact-title" class="section-title">Layanan Konsultasi &amp; Kontak Showroom</h2>
+        <p class="section-desc">
+          Diskusikan kebutuhan instrumen musik atau instalasi studio rekaman Anda bersama tim spesialis Music For
+          Living. Formulir dilengkapi validasi client-side ketat untuk format email dan verifikasi kesesuaian konfirmasi
+          email.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Formulir Konsultasi Musik -->
+        <div class="contact-card">
+          <form id="contact-form" novalidate>
+            <div class="form-item">
+              <label for="nama">Nama Lengkap <span class="required-mark" aria-hidden="true">*</span></label>
+              <input type="text" id="nama" name="nama" class="form-input" placeholder="Masukkan nama lengkap Anda"
+                maxlength="50" autocomplete="name" required aria-describedby="nama-error nama-hint">
+              <p id="nama-error" class="field-error" role="alert"></p>
+              <p id="nama-hint" class="field-hint">Minimal 3 karakter alfabet. Angka, simbol khusus.</p>
+            </div>
+
+            <div class="form-item">
+              <label for="email">Alamat Email <span class="required-mark" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="pemusik@domain.com"
+                autocomplete="email" required aria-describedby="email-error email-hint">
+              <p id="email-error" class="field-error" role="alert"></p>
+              <p id="email-hint" class="field-hint">Gunakan format email standar (contoh: nama@domain.com)</p>
+            </div>
+
+            <div class="form-item">
+              <label for="email-confirm">Konfirmasi Alamat Email <span class="required-mark"
+                  aria-hidden="true">*</span></label>
+              <input type="email" id="email-confirm" name="email-confirm" class="form-input"
+                placeholder="Ketik ulang alamat email Anda" autocomplete="off" required
+                aria-describedby="email-confirm-error">
+              <p id="email-confirm-error" class="field-error" role="alert"></p>
+            </div>
+
+            <div class="form-item">
+              <label for="kategori-minat">Kategori Instrumen yang Diminati</label>
+              <select id="kategori-minat" name="kategori-minat" class="form-select">
+                <option value="gitar">Gitar &amp; Bass</option>
+                <option value="keyboard">Keyboard &amp; Piano</option>
+                <option value="drum">Drum &amp; Perkusi</option>
+                <option value="studio">Audio &amp; Studio Recording</option>
+                <option value="aksesoris">Aksesoris Musik</option>
+                <option value="konsultasi-umum">Konsultasi Umum Audio</option>
+              </select>
+            </div>
+
+            <div class="form-item">
+              <label for="pesan">Pesan atau Kebutuhan Spesifik <span class="required-mark"
+                  aria-hidden="true">*</span></label>
+              <textarea id="pesan" name="pesan" class="form-textarea" rows="4" maxlength="500"
+                placeholder="Jelaskan kebutuhan instrumen, jenis musik yang dimainkan, atau anggaran Anda..." required
+                aria-describedby="pesan-error pesan-hint"></textarea>
+              <p id="pesan-error" class="field-error" role="alert"></p>
+              <p id="pesan-hint" class="field-hint">Minimal 10 karakter, maksimal 500 karakter.</p>
+            </div>
+
+            <button type="submit" id="btn-submit-contact" class="btn btn-primary btn-block">Kirim Permintaan
+              Konsultasi</button>
+            <div id="form-success" class="form-success-wrapper" role="status" aria-live="polite"></div>
+          </form>
         </div>
-        <div class="field">
-          <label for="email-confirm">Konfirmasi email</label>
-          <input type="email" id="email-confirm" name="email-confirm" autocomplete="off" aria-describedby="email-confirm-error">
-          <p id="email-confirm-error" class="field-error" role="alert"></p>
-        </div>
-        <button type="submit">Kirim</button>
-        <p id="form-success" class="form-success" role="status"></p>
-      </form>
+
+        <!-- Informasi Showroom & Komitmen Layanan -->
+        <aside class="showroom-card" aria-label="Informasi Showroom Musik">
+          <h3 class="showroom-title">Informasi Showroom Musik</h3>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true"></span>
+              <div>
+                <h3>Lokasi Showroom</h3>
+                <p>Jl. Gunung Sepuluh No.000, Tarakan Timur, Kota Tarakan, Kalimantan Utara</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true"></span>
+              <div>
+                <h3>Jam Operasional &amp; Uji Alat</h3>
+                <p>Senin - Sabtu: 09.00 - 21.00 WITA<br>Minggu: 13.00 - 22.00 WITA</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true"></span>
+              <div>
+                <h3>Layanan Pelanggan Resmi</h3>
+                <p>Telepon: 0800-0000-0000<br>WhatsApp: +62 812-1111-1111</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true"></span>
+              <div>
+                <h3>Email Resmi Toko</h3>
+                <p>rezarandikap@gmial.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="guarantee-note">
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.35rem;">Jaminan
+              Produk Orisinal</h4>
+            <p>Seluruh instrumen musik yang terdaftar di Music For Living dijamin keaslian garansi resminya, melewati
+              proses kalibrasi sebelum diserahkan, serta siap diuji coba langsung di studio kami.</p>
+          </div>
+        </aside>
+      </div>
     </section>
   </main>
 
+  <!-- Footer Halaman -->
   <footer class="site-footer">
-    <p>Nama Lengkap - NIM - Kelas</p>
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand-title">Music For Living</p>
+        <p class="footer-tagline">"Beethoven pernah beli di sini"</p>
+        <p class="footer-desc">Penyedia alat-alat yang mendukung musikalitas Anda. Showroom instrumen musik bergaransi
+          resmi dan perlengkapan audio studio rekaman.</p>
+      </div>
+
+      <div class="footer-student">
+        <h3>Reza Randika Putra</h3>
+        <p><strong>Mata Kuliah:</strong> Pemrograman Web</p>
+        <p><strong>NPM:</strong> 2440304016</p>
+        <p><strong>Jurusan:</strong> Teknik Komputer</p>
+        <p><strong>Universitas:</strong> Universitas Borneo Tarakan</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Music For Living. Penilaian Tengah Semester (PTS) Pemrograman Web.</p>
+    </div>
   </footer>
 
-  <script src="utils.js"></script>
-  <script src="apps.js"></script>
+  <!-- Script Logika & Utilitas -->
+  <script src="java/utils.js"></script>
+  <script src="java/apps.js"></script>
 </body>
+
 </html>

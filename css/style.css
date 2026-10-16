@@ -1,0 +1,616 @@
+/* ==========================================================================
+   CSS Music For Living (Sederhana, Bersih & Mudah Dijelaskan untuk Ujian PTS)
+   Palet: Rosewood (#721820), Sand (#E5D3AF), Ivory (#FAF7F2), Charcoal (#1F1A1B)
+   ========================================================================== */
+
+/* 1. Variabel Desain Utama */
+:root {
+  --primary: #721820;       /* Warna primer toko (Rosewood) */
+  --primary-hover: #8F222B; /* Warna saat tombol disorot */
+  --sand: #E5D3AF;          /* Aksen sekunder */
+  --bg: #FAF7F2;            /* Latar belakang halaman (Warm Ivory) */
+  --surface: #FFFFFF;       /* Latar kartu putih */
+  --text: #1F1A1B;          /* Teks utama (Kontras tinggi WCAG AAA) */
+  --text-muted: #54626D;    /* Teks sekunder/keterangan */
+  --border: #E5DCD0;        /* Garis batas elemen */
+  --radius: 8px;            /* Kelengkungan sudut standar */
+}
+
+/* 2. Reset & Tipografi Dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 3. Header & Navigasi Lekat (Sticky Navbar) */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.brand-logo-img {
+  border-radius: 4px;
+}
+
+.student-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.nav-link.active, .nav-link:hover {
+  background: var(--primary);
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* 4. Wadah Utama, Bagian & Tombol */
+#main-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  color: var(--primary);
+  margin: 0.25rem 0 0.5rem;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #FFF;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  color: #FFF;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: #F1ECE1;
+  text-decoration: none;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* 5. Dashboard Hero & Kartu Sorotan */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-tagline-badge {
+  display: inline-block;
+  background: #F1ECE1;
+  color: var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.hero-title {
+  font-size: 2.1rem;
+  color: var(--primary);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.hero-lead {
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.hero-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.hero-card-media {
+  border-radius: var(--radius);
+  overflow: hidden;
+  height: 200px;
+}
+
+.hero-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.hero-card-price {
+  font-family: monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* 6. Statistik & Panel Filter Data (Fitur Y: Kategori, Harga, Urutkan) */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.stat-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: monospace;
+}
+
+.filter-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.field-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  min-height: 44px;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--primary);
+  outline: 2px solid rgba(114, 24, 32, 0.15);
+}
+
+.stats-subpanel {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.stats-subpanel-title {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 7. Katalog Produk & Challenge C (Toggle Grid / List Mode) */
+.catalog-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.toggle-btn {
+  padding: 0.5rem 0.85rem;
+  border: none;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.toggle-btn[aria-pressed="true"] {
+  background: var(--primary);
+  color: #FFF;
+}
+
+.status-notice {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.status-loading { background: #EEF5FB; color: #12558A; }
+.status-success { background: #EBF8F1; color: #0E6239; }
+.status-empty   { background: #FFFBEB; color: #92400E; }
+.status-error   { background: #FDF2F2; color: #A81C1C; }
+
+/* Grid Tampilan Standar */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-media {
+  position: relative;
+  height: 180px;
+  background: #EEE;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-brand {
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.card-rating {
+  font-weight: 700;
+  color: #B45309;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.card-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.card-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}
+
+.price-label {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.price-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: monospace;
+}
+
+.card-footer-meta {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+/* Challenge C: Tampilan Mode List */
+.products-grid.list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-grid.list-view .product-card {
+  flex-direction: row;
+}
+
+.products-grid.list-view .card-media {
+  width: 200px;
+  min-width: 200px;
+  height: auto;
+}
+
+/* 8. Formulir Kontak & Validasi Z (Email + Konfirmasi) */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1.5rem;
+}
+
+.contact-card, .showroom-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.form-item {
+  margin-bottom: 1rem;
+}
+
+.form-item label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.required-mark {
+  color: #A81C1C;
+}
+
+.field-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.field-error {
+  font-size: 0.8rem;
+  color: #A81C1C;
+  font-weight: 600;
+  margin-top: 0.2rem;
+  min-height: 1rem;
+}
+
+.form-input[aria-invalid="true"], 
+.form-textarea[aria-invalid="true"] {
+  border-color: #A81C1C;
+  background: #FFF9F9;
+}
+
+.form-success-box {
+  background: #EBF8F1;
+  border: 1px solid #A3E0BF;
+  color: #0E6239;
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-top: 1rem;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.info-item {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.info-item h3 {
+  font-size: 0.9rem;
+}
+
+.info-item p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.guarantee-note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+/* 9. Footer & Responsif Ponsel */
+.site-footer {
+  background: #1F1A1B;
+  color: #FAF7F2;
+  padding: 2rem 1rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 1.5rem;
+}
+
+.footer-brand-title {
+  color: var(--sand);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-desc, .footer-student p {
+  font-size: 0.85rem;
+  color: #AEC4D4;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #AEC4D4;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-grid, .contact-layout {
+    grid-template-columns: 1fr;
+  }
+  .products-grid.list-view .product-card {
+    flex-direction: column;
+  }
+  .products-grid.list-view .card-media {
+    width: 100%;
+    height: 180px;
+  }
+}
